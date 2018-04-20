@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
-  # resources :posts
+  resources :posts
 
   # authenticated :user do
   	root 'pages#home', as: 'autenticathed_root'
